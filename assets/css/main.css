@@ -1,0 +1,7 @@
+*:not(.pi),
+*:not(.pi)::before,
+*:not(.pi)::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
