@@ -1,15 +1,15 @@
 <template>
   <UApp>
-    <NuxtLayout>
+    <div class="min-h-dvh not-print:grid">
       <NuxtPage />
-    </NuxtLayout>
+    </div>
   </UApp>
 </template>
 
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Kale` : 'Kale';
+    return titleChunk ? `${titleChunk} - Zirco` : 'Zirco';
   },
 });
 </script>
