@@ -5,10 +5,11 @@ type Settings = {
   bsb?: string;
   account_number?: string;
   rate?: string;
-
-  business_name?: string;
-  address_line_1?: string;
-  address_line_2?: string;
+  receiving_business: {
+    business_name?: string;
+    address_line_1?: string;
+    address_line_2?: string;
+  };
 
 };
 
@@ -19,11 +20,15 @@ export const defaultSettings: Settings = {
   bsb: '987654',
   account_number: '12345678',
   rate: '100',
-  business_name: 'Acme Corp',
-  address_line_1: '123 Main St',
-  address_line_2: 'Suite 100',
+  receiving_business: {
+    business_name: 'Acme Corp',
+    address_line_1: '123 Main St',
+    address_line_2: 'Suite 100',
+  },
 };
 
 export type { Settings };
 
-export const useSettings = () => useState<Settings>('settings', () => ({}));
+export const useSettings = () => useState<Settings>('settings', () => ({
+  receiving_business: {},
+}));

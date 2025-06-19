@@ -67,22 +67,22 @@
       <div class="grid grid-cols-2 gap-4 mb-4">
         <UFormField label="Business Name">
           <UInput
-            v-model="settings.business_name"
-            :placeholder="defaultSettings.business_name"
+            v-model="settings.receiving_business.business_name"
+            :placeholder="defaultSettings.receiving_business.business_name"
             variant="soft"
           />
         </UFormField>
         <UFormField label="Address Line 1">
           <UInput
-            v-model="settings.address_line_1"
-            :placeholder="defaultSettings.address_line_1"
+            v-model="settings.receiving_business.address_line_1"
+            :placeholder="defaultSettings.receiving_business.address_line_1"
             variant="soft"
           />
         </UFormField>
         <UFormField label="Address Line 2">
           <UInput
-            v-model="settings.address_line_2"
-            :placeholder="defaultSettings.address_line_2"
+            v-model="settings.receiving_business.address_line_2"
+            :placeholder="defaultSettings.receiving_business.address_line_2"
             variant="soft"
           />
         </UFormField>
@@ -98,22 +98,22 @@
       <div class="grid grid-cols-2 gap-4 mb-4">
         <UFormField label="Business Name">
           <UInput
-            v-model="settings.business_name"
-            :placeholder="defaultSettings.business_name"
+            v-model="settings.receiving_business.business_name"
+            :placeholder="defaultSettings.receiving_business.business_name"
             variant="soft"
           />
         </UFormField>
         <UFormField label="Address Line 1">
           <UInput
-            v-model="settings.address_line_1"
-            :placeholder="defaultSettings.address_line_1"
+            v-model="settings.receiving_business.address_line_1"
+            :placeholder="defaultSettings.receiving_business.address_line_1"
             variant="soft"
           />
         </UFormField>
         <UFormField label="Address Line 2">
           <UInput
-            v-model="settings.address_line_2"
-            :placeholder="defaultSettings.address_line_2"
+            v-model="settings.receiving_business.address_line_2"
+            :placeholder="defaultSettings.receiving_business.address_line_2"
             variant="soft"
           />
         </UFormField>
@@ -183,7 +183,10 @@
             }"
           />
         </UFormField>
-        <UFormField label="Superannuation/Pension Rate">
+        <UFormField
+          label="Tax System"
+          description="Very limited support"
+        >
           <USelectMenu
             :items="tax_systems"
             class="w-full"

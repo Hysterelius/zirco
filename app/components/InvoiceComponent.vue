@@ -29,24 +29,24 @@
           <div>
             <p
               :class="{
-                'opacity-25': !settings?.business_name,
+                'opacity-25': !settings?.receiving_business.business_name,
               }"
             >
-              {{ settings?.business_name || defaultSettings.business_name }}
+              {{ settings?.receiving_business.business_name || defaultSettings.receiving_business.business_name }}
             </p>
             <p
               :class="{
-                'opacity-25': !settings?.address_line_1,
+                'opacity-25': !settings?.receiving_business.address_line_1,
               }"
             >
-              {{ settings?.address_line_1 || defaultSettings.address_line_1 }}
+              {{ settings?.receiving_business.address_line_1 || defaultSettings.receiving_business.address_line_1 }}
             </p>
             <p
               :class="{
-                'opacity-25': !settings?.address_line_2,
+                'opacity-25': !settings?.receiving_business.address_line_2,
               }"
             >
-              {{ settings?.address_line_2 || defaultSettings.address_line_2 }}
+              {{ settings?.receiving_business.address_line_2 || defaultSettings.receiving_business.address_line_2 }}
             </p>
           </div>
         </div>
