@@ -1,0 +1,29 @@
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  // allow autocomplete for ArkType expressions like "string | num"
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  // prioritize ArkType's "type" for autoimports
+  "typescript.preferences.autoImportSpecifierExcludeRegexes": ["^(node:)?os$"],
+  "cSpell.words": ["arktype", "dedupe", "katex"],
+  // set tab width to 2 spaces
+  "editor.tabSize": 2,
+  "eslint.rules.customizations": [
+    {
+      "rule": "@stylistic/*",
+      "fixable": true,
+      "severity": "off"
+    }
+  ]
+}

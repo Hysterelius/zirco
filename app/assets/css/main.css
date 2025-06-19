@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+    --font-sans: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --font-serif: 'Vollkorn', 'Wittgenstein', 'Georgia', serif;
+    --font-mono: 'Azeret Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+:root {
+    --ui-radius: var(--radius-sm);
+    --ui-primary-muted: var(--ui-color-primary-700);
+}
+
+
+.dark {
+    --ui-primary-muted: var(--ui-color-primary-300);
+}
