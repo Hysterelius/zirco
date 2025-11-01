@@ -24,7 +24,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 	}
 };
 
-export const handleError: HandleServerError = ({ error, event, status, message }) => {
+export const handleError: HandleServerError = ({ error }) => {
 	// 1. Log the entire error object to the server's console
 	console.error('SvelteKit Server Error:', error);
 
