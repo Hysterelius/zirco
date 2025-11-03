@@ -1,38 +1,25 @@
-# sv
+# Zirco
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Zirco is an extremely simple invoice generation tool.
 
-## Creating a project
+Enter your hours, and Zirco will generate a clean, printable invoice for you.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Features
+- Enter time or hours worked per task or day
+- Generates a neat invoice layout you can save or print
+- Minimal, focused workflow — no frills
 
-```sh
-# create a new project in the current directory
-npx sv create
+Quick use
+1. Open the app.
+2. Enter your hours and brief descriptions for the work you did.
+3. Click the generate/export button to produce a formatted invoice you can print or save as PDF.
 
-# create a new project in my-app
-npx sv create my-app
-```
+Why Zirco?
 
-## Developing
+It's tiny, focused, and built to get invoices out quickly without extra complexity.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+License
 
-```sh
-npm run dev
+See the project `LICENSE` for license details.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Enjoy! :) 
