@@ -4,11 +4,9 @@
 		"strings": "on"
 	},
 	// prioritize ArkType's "type" for autoimports
-	"typescript.preferences.autoImportSpecifierExcludeRegexes": [
-		"^(node:)?os$"
-	],
-	"cSpell.words": [
-		"timesheet",
-		"timesheets"
-	]
+	"typescript.preferences.autoImportSpecifierExcludeRegexes": ["^(node:)?os$"],
+	"cSpell.words": ["timesheet", "timesheets"],
+
+	// format on save
+	"editor.formatOnSave": true
 }

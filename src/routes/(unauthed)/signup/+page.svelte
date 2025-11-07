@@ -2,7 +2,7 @@
 	import GalleryVerticalEndIcon from '@lucide/svelte/icons/gallery-vertical-end';
 	import SignupForm from '$lib/components/signup-form.svelte';
 
-	import tiles from "$lib/assets/tiles.jpg"
+	import tiles from '$lib/assets/tiles.jpg';
 </script>
 
 <div class="grid min-h-svh lg:grid-cols-2">

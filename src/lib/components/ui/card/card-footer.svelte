@@ -7,17 +7,14 @@
 		class: className,
 		children,
 		...restProps
-	}: WithElementRef<HTMLAttributes<HTMLTableRowElement>> = $props();
+	}: WithElementRef<HTMLAttributes<HTMLDivElement>> = $props();
 </script>
 
-<tr
+<div
 	bind:this={ref}
-	data-slot="table-row"
-	class={cn(
-		'border-b transition-colors data-[state=selected]:bg-muted hover:[&,&>svelte-css-wrapper]:[&>th,td]:bg-muted/50',
-		className
-	)}
+	data-slot="card-footer"
+	class={cn('flex items-center px-6 [.border-t]:pt-6', className)}
 	{...restProps}
 >
 	{@render children?.()}
-</tr>
+</div>
